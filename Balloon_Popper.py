@@ -36,6 +36,6 @@ def inf_ball():  # inflate balloon
 draw_ball() #actually calling fcn 
 
 onkey(inf_ball, "Up") #when the user presses the up key increase size
-listen() #waits for the user to press listen for inputs
+listen() #listen for inputs
 
-done()
+done() #stops execution of code
