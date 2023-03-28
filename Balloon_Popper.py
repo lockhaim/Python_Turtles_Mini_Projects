@@ -18,9 +18,24 @@ from turtle import *
 
 diam = 40
 pop_diam = 100
-
-def draw_balloon():
+ 
+def draw_ball():  # draw balloon fcn
     color("red")
     dot(diam)
 
-draw_balloon()
+def inf_ball():  # inflate balloon 
+    global diam
+    diam +=10
+    draw_ball()
+
+    if diam >= pop_diam:  #conditional for when to pop
+        clear()
+        diam = 40
+        write("POP!")
+
+draw_ball() #actually calling fcn 
+
+onkey(inf_ball, "Up") #when the user presses the up key increase size
+listen() #waits for the user to press listen for inputs
+
+done()
