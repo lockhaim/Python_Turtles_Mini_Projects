@@ -1,9 +1,17 @@
 from turtle import *
 
 ## OBJECTIVES ##
-#detect inputs
-#require multiple inputs to pop balloon
-#utilize variable conditions and functions
+
+# detect inputs
+# require multiple inputs to pop balloon
+# utilize variable conditions and functions
+
+
+
+# WE CAN TO GO FURTHER
+
+# Create a 5x5 grid of ballons
+# Alli
 
 ## PSEUDOCODE ##
 ## Draw Balloon
