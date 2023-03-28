@@ -16,3 +16,11 @@ from turtle import *
 ##  ----Clear Balloon
 ##  ----Display "POP!"
 
+diam = 40
+pop_diam = 100
+
+def draw_balloon():
+    color("red")
+    dot(diam)
+
+draw_balloon()
