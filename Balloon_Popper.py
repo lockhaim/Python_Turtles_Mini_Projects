@@ -11,7 +11,10 @@ from turtle import *
 # WE CAN TO GO FURTHER
 
 # Create a 5x5 grid of ballons
-# Alli
+# Allow user to click on balloon to inflate its size.
+# Assign each balloon a random size to pop between 50-100.
+
+
 
 ## PSEUDOCODE ##
 ## Draw Balloon
