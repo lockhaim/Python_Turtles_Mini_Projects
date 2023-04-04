@@ -12,16 +12,27 @@ from random import *
 bgcolor("black")
 hideturtle() #hide the turtle so as not to obstruct our 'stars'
 
+width = window_width()
+height = window_height()
+
+speed(0)
+
 def draw_star(xpos, ypos): #star generation
-    size = randrange(2,9)
+    size = randrange(3,12)
     penup()
     goto(xpos, ypos)
     pendown()
     dot(size, "white")
 
-draw_star(0, 0) #test stars
-draw_star(24, 15)
-draw_star(-50, 100)
-draw_star(100, 52)
+# draw_star(0, 0) #test stars
+# draw_star(24, 15)
+# draw_star(-50, 100)
+# draw_star(100, 52)
+
+
+for x in range(125):     # (0,0) is the center of the screen so all stars currently in NE quadrant if the range doesnt start at negative
+    xpos = randrange(-width/2, width/2) #uses a full screen size in window if not /2
+    ypos = randrange(-height/2, height/2) #dividing width and height by 2 will give us all dots in the default window size
+    draw_star(xpos, ypos)
 
 done()
